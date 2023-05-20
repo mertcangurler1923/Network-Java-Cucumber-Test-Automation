@@ -3,7 +3,7 @@ Feature: Network Test
   Scenario: Adding the discounted product to the cart and deleting it.
 
       Given “https://www.network.com.tr/” access.
-      And The network url is checked.
+      When The network url is checked.
       And Search components “jacket” are printed and searched.
       And Scrolling as much as the show more button on the product listing page.
       And It is checked that the 2nd page is passed (url changes).
@@ -15,5 +15,5 @@ Feature: Network Test
       And Filling in the user information from csv format (E-mail - by reading the password from the csv file is necessary.)
       And Check that the login button has arrived.
       And Click the network logo.
-      When By clicking on the bag logo on the main page, the right side of the Sepetim building opens.
+      And By clicking on the bag logo on the main page, the right side of the Sepetim building opens.
       Then It is checked that the basket is empty by removing the product from the basket.
